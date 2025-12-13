@@ -1,0 +1,36 @@
+[
+  {
+    "id": 1,
+    "title": "Booki",
+    "description": "Site de réservation responsive",
+    "tech": ["HTML", "CSS"],
+    "image": "/images/booki.png",
+    "github": "https://github.com/JulienF-OC/Booki2"
+  },
+  {
+    "id": 2,
+    "title": "Sophie Bluel",
+    "description": "Site portfolio pour une architecte d'intérieur",
+    "tech": ["HTML", "CSS", "JavaScript"],
+    "image": "/images/sophiebluel.png",
+    "github": "https://github.com/JulienF-OC/P3-SophieBluel",
+    "demo": "https://booki-demo.netlify.app"
+  },
+  {
+    "id": 3,
+    "title": "Nina Carducci",
+    "description": "Site vitrine pour une photographe",
+    "tech": ["HTML", "CSS", "JavaScript"],
+    "image": "/images/ninacarducci.png",
+    "github": "https://github.com/JulienF-OC/P4-NinaCarducci",
+    "demo": "https://booki-demo.netlify.app"
+  },
+  {
+    "id": 4,
+    "title": "Kasa",
+    "description": "Application de réservation immobilière",
+    "tech": ["HTML", "CSS", "JavaScript", "REACT"],
+    "image": "/images/kasa.png",
+    "github": "https://github.com/JulienF-OC/P5-KASA"
+  }
+]
