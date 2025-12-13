@@ -1,0 +1,51 @@
+#Main {
+  width: 1440px;
+  margin: 60px auto;
+}
+
+.Cards {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  width: 1190px;
+}
+
+.Card {
+  display: flex;
+  width: 1440px;
+  height: 375px;
+  margin: 0 auto;
+  gap: 170px;
+  border: 2px solid #fff;
+  box-shadow: 10px 10px 16px -5px aliceblue;
+}
+
+.Card img {
+  border-radius: 63%;
+  margin-left: 100px;
+  width: 250px;
+  object-fit: cover;
+  display: flex;
+  align-self: center;
+  aspect-ratio: 1/1;
+}
+
+.Card-content {
+  color: #fff;
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+}
+
+.Card-content h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  align-self: center;
+}
+
+.Card-content p {
+  font-size: 1.1rem;
+  margin-top: -15px;
+  line-height: 1.4;
+  width: 800px;
+}

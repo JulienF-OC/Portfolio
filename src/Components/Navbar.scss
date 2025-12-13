@@ -33,4 +33,9 @@
 .link a {
   color: #f8fafc;
   font-size: 1.2rem;
+  text-decoration: none;
+}
+
+.link a:hover {
+  text-decoration: underline;
 }
