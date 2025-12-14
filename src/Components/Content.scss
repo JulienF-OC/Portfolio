@@ -6,7 +6,7 @@
 .Cards {
   display: flex;
   flex-direction: row;
-  margin: 0 auto;
+  margin: 0 auto auto 65px;
   width: 1190px;
 }
 
@@ -16,8 +16,8 @@
   height: 375px;
   margin: 0 auto;
   gap: 170px;
-  border: 2px solid #fff;
-  box-shadow: 10px 10px 16px -5px aliceblue;
+  border: 2px solid #000;
+  box-shadow: 10px 10px 16px -5px #000;
 }
 
 .Card img {
@@ -28,10 +28,16 @@
   display: flex;
   align-self: center;
   aspect-ratio: 1/1;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.Card img:hover {
+  transform: scale(1.2);
 }
 
 .Card-content {
-  color: #fff;
+  color: #000;
   display: flex;
   gap: 30px;
   flex-direction: column;

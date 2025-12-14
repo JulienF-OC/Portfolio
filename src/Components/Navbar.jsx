@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import "./Navbar.scss";
 
 function Navbar() {
@@ -14,7 +15,12 @@ function Navbar() {
         </div>
         <div className="link">
           <a href="#">Accueil</a>
-          <a href="#">Projets</a>
+          <NavLink
+            to="/projects"
+            className={({ isActive }) => (isActive ? "active" : "")}
+          >
+            Mes projets
+          </NavLink>
           <a href="#">Qui suis-je ?</a>
           <a href="#">Contact</a>
         </div>
