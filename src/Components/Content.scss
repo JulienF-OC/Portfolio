@@ -3,55 +3,44 @@
   margin: 60px auto;
 }
 
-.Cards {
-  display: flex;
-  flex-direction: row;
-  margin: 0 auto auto 65px;
-  width: 1190px;
+.title h1 {
+  font-size: clamp(3rem, 6vw, 5rem);
+  font-weight: 700;
+  text-align: center;
+  color: #2e3440;
+  letter-spacing: -0.02em;
 }
 
-.Card {
-  display: flex;
-  width: 1440px;
-  height: 375px;
-  margin: 0 auto;
-  gap: 170px;
-  border: 2px solid #000;
-  box-shadow: 10px 10px 16px -5px #000;
+@keyframes neon-outline-flicker {
+  0%,
+  20%,
+  22%,
+  25%,
+  55%,
+  100% {
+    text-shadow:
+      /* contour sombre (lisibilité) */ -1px -1px 0 rgba(0, 0, 0, 0.35),
+      1px -1px 0 rgba(0, 0, 0, 0.35), -1px 1px 0 rgba(0, 0, 0, 0.35),
+      1px 1px 0 rgba(0, 0, 0, 0.35), /* néon blanc */ 0 0 4px #ffffff,
+      0 0 8px #ffffff, 0 0 16px #ffffff;
+  }
+
+  21%,
+  24%,
+  56% {
+    text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.45), 1px -1px 0 rgba(0, 0, 0, 0.45),
+      -1px 1px 0 rgba(0, 0, 0, 0.45), 1px 1px 0 rgba(0, 0, 0, 0.45);
+  }
 }
 
-.Card img {
-  border-radius: 63%;
-  margin-left: 100px;
-  width: 250px;
-  object-fit: cover;
-  display: flex;
-  align-self: center;
-  aspect-ratio: 1/1;
-  transition: 0.3s ease;
-  cursor: pointer;
-}
+.neon-outline-flicker {
+  font-size: 4rem;
+  font-weight: 300;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
 
-.Card img:hover {
-  transform: scale(1.2);
-}
+  color: transparent; // texte vide
+  text-shadow: inherit;
 
-.Card-content {
-  color: #000;
-  display: flex;
-  gap: 30px;
-  flex-direction: column;
-}
-
-.Card-content h2 {
-  font-size: 2rem;
-  font-weight: bold;
-  align-self: center;
-}
-
-.Card-content p {
-  font-size: 1.1rem;
-  margin-top: -15px;
-  line-height: 1.4;
-  width: 800px;
+  animation: neon-outline-flicker 3s infinite;
 }
